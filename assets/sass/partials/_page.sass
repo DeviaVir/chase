@@ -1,0 +1,258 @@
+#background
+	background: transparent url( '../img/background.jpg' ) no-repeat 0 0
+	display: block
+	position: absolute
+	top: -140px
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	min-height: 700px
+	background-size: cover
+	background-clip: border-box
+	background-color: transparent
+	background-origin: padding-box
+	background-position: center center
+	+animate( fadeIn, 0.3s, 0.2s )
+	@include filter( blur(0.5px) )
+	
+#contact-background
+	background: transparent url( '../img/contact-background.jpg' ) no-repeat 0 0
+	display: block
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	min-height: 400px
+	background-size: cover
+	background-clip: border-box
+	background-color: transparent
+	background-origin: padding-box
+	background-position: center center
+	
+#intro
+	position: relative
+	min-width: 0
+	max-width: 100%
+	margin: 0
+	+animate( fadeIn, 0.3s, 0.2s )
+	overflow: hidden
+	
+	> article
+		min-height: 400px
+	
+	h1, h2
+		display: block
+		background: rgba( 0, 0, 0, 0.3 )
+		font:
+			size: 80px
+			weight: 600
+		text-transform: uppercase
+		color: white
+		width: 100%
+		text-align: center
+		max-width: 825px
+		margin: 150px auto 0
+		padding: 0 20px
+		
+	h1 > i
+		font:
+			weight: 300
+			style: normal
+		
+	h2
+		font:
+			size: 40px
+			weight: 300
+		max-width: 470px
+		margin-top: 20px
+		
+	.social
+		margin-top: 20px
+		margin-bottom: 20px
+		
+		li
+			a
+				padding: 5px 0
+				background: rgba( 0, 0, 0, 0.3 )
+				
+				span
+					color: white
+					
+			&:hover,
+			&:active
+				a span
+					color: $color
+		
+.contact
+	li
+		list-style: none
+		margin: 0
+		padding: 0
+		
+		i
+			font:
+				style: normal
+				weight: 300
+				size: 12px
+
+.social
+	width: 216px
+	margin: 0 auto
+	height: 50px
+	
+	li
+		float: left
+		margin: 0 2px
+		list-style: none
+		
+		a
+			width: 50px
+			height: 50px
+			display: block
+			
+			span
+				text-indent: 0
+				font-size: 40px
+				color: #b2b2b2
+				display: block
+				
+				width: 50px
+				height: 50px
+				text-align: center
+				
+		&:hover,
+		&:active
+			a span
+				color: $color
+				
+.title
+	height: 90px
+	background: $color
+	position: relative
+	z-index: 10
+	
+	h1
+		font-size: 25px
+		line-height: 90px
+		padding: 0
+		margin: 0
+		color: white
+		text-transform: uppercase
+		
+	> i
+		display: block
+		width: 0 
+		height: 0
+		border-left: 20px solid transparent
+		border-right: 20px solid transparent
+		border-top: 20px solid $color
+		margin: 0 auto
+		
+.default
+
+	&.top-margin
+		padding-top: 80px
+	&.small-top-margin
+		padding-top: 50px
+	&.bottom-margin
+		padding-bottom: 80px
+	&.small-bottom-margin
+		padding-bottom: 50px
+	&.relative
+		position: relative
+		overflow: hidden
+		z-index: 0
+		
+	p 
+		font:
+			size: 13px
+			style: normal
+			weight: 400
+		color: #656565
+		line-height: 25px
+
+		> i
+			font:
+				style: normal
+				weight: 300
+				size: 18px
+			color: #484848
+			margin: 15px 0 0
+			line-height: 28px
+			display: block
+		
+	strong
+		text-transform: uppercase
+		color: #484848
+
+
+	.me
+		@include border-radius( 50% )
+		
+.form
+	.contact
+		li
+			i,span
+				color: white
+
+	input,
+	textarea
+		padding: 5px 10px
+		text-transform: uppercase
+		border: none
+		resize: none
+		
+		&[type="submit"]
+			background: $color
+			color: white
+		
+		
+// Dark sections
+.dark
+	background: #333333
+	
+	ul li a
+		color: rgba( 255, 255, 255, 0.5 )
+		display: block
+		
+		&:hover
+			color: $color
+			
+.projects
+	margin: 0
+	
+// Dark requires light text
+.white
+	p
+		color: #d2d2d2
+	strong,h1,h2,h3,h4,h5
+		color: white
+		
+// Footer
+footer
+	i
+		display: block
+		margin: 40px 0 20px
+		font-style: normal
+		color: #656565
+		
+	.logo
+		width: 200px
+		height: 200px
+		background-size: 200px 200px
+		margin: 20px auto
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale") /* Firefox 10+, Firefox on Android */
+		filter: gray /* IE6-9 */
+		-webkit-filter: grayscale(100%) /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+
+//
+//
+//							
+// dat sublime selection bug (disguised as feature)
+//
+//
+//
