@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 780px;
+	margin: 50px auto 0;
+	background: #f9f9f9;
+	color: #808080;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 20px;
+	
+	animation-duration: .5s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+
+    backface-visibility: hidden;
+	
+	animation-name: fadeInDownBig;
+}
+
+section {
+	margin: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	overflow: hidden;
+	height: 122px;
+	
+	position: relative;
+	
+	animation-duration: .5s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+
+    backface-visibility: hidden;
+	
+	animation-name: fadeInDownBig;
+}
+
+article {
+	margin: 10px;
+	border: 1px solid #f4f4f4;
+	padding: 5px;
+	
+	position: absolute;
+	top: 0;
+	left; 0;
+	
+	animation-duration: .5s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+
+    backface-visibility: hidden;
+}
+
+article.top {
+	 animation-name: fadeInDownBig;
+}
+
+article.bottom {
+	 animation-name: fadeInUpBig;
+}
+
+p {
+	height: 100px;
+	overflow: auto;
+}
+
+div.top {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 20px solid black;
+	
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+div.bottom {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid black;
+
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+@keyframes fadeInUpBig {
+	0% {
+		opacity: 0;
+		transform: translateY(2000px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		transform: translateY(-2000px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
