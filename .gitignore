@@ -1,7 +1,8 @@
-
 *.scssc
-
 *.sassc
-
 coding/TravelBird/*
 coding/slim-betalen-poster/*
+coding/creative_old/*
+coding/etopia/*
+sftp-config.json
+node_modules

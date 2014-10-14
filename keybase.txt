@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/deviavir
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chase.sillevis.net
+  * I am deviavir (https://keybase.io/deviavir) on keybase.
+  * I have a public key with fingerprint 0D7E AFC2 CAE8 F463 B3D0  1FB2 38F3 B216 F4A7 B8F9
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.4.15"
+        },
+        "key": {
+            "fingerprint": "0d7eafc2cae8f463b3d01fb238f3b216f4a7b8f9",
+            "host": "keybase.io",
+            "key_id": "38F3B216F4A7B8F9",
+            "uid": "e265a93e80df2496bdd6773c8212a700",
+            "username": "deviavir"
+        },
+        "merkle_root": {
+            "ctime": 1408019878,
+            "hash": "a4ac366c110bdd8647c6f1264abe1fda6e40f90e761777b43fbf8f0c0bdcf1f2d6d9ff25df52c266d60e7b55663fff3a82fc71951e5c1badfe9ee4e8ec3254ff",
+            "seqno": 37222
+        },
+        "service": {
+            "hostname": "chase.sillevis.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1408019949,
+    "expire_in": 157680000,
+    "prev": "8b004193d4a34173248d9d593713bb4a2dc858aae1d1a63679d0aefdeb46499e",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFVkn9olVUYx+8tG7aKZj8UU5y8ORK2Xd7z4z0/FiFTuiPSAl1ZVtydH8/Zfef1
+vnfve3drjUWjQIyQ/VNUsKDUImNCc/2C+sOCyoRUkjAzCRJqkGW5FBOj9x2L8vx1
+znk+5/s83+c54zdcnWvOi3NTi2ff/OBi/tCMzm36ZfLMiKcjO+x1jXimEkK1nu2q
+aht4Xd5WGNYqgUIYraxGFgoDycp5psNrQJyEUTWl/AItoMAb7cj47LULq/0Q1+Iw
+E/N8y0E5g40C4SgjmlgfOY2JcERjxBxVXAsnU81ylNSvSOvNaZZCm94SUSRrU75I
+u/laUcz4obkAYBYoSUD41mEqmbaWcU6MwAgr7vsZmEA878lCI1SNMM7q3Qbx1gqU
+4iiac23qYYYg6gsfScFFWpFKyukjRZUhjBmE/FRdMMoNcwgzqjQgZxUD6jvpA2eI
+c64pcdoJ55uUNg45bJmVzuHAugAbzJhlKauDgDHinCNKYGc4kgGCwCCtrAMJQEGA
+ITigzqUWEhisRl4X4Rjj0ewYN0IDWdlZ1+bNmXLWtySsVFKXSaEK2aRqcVSPTFRJ
+4+V6vdaVOa8P18Db3+U9Dro0L1XSYdWmk/v/bFGKXtkVSWWHB0/UwhhKYUYEnAk/
+XVkeaKQ5hPZ9iiSxVBGKOMFUWGkDSTgiWlOFrRGBUAqQRYoRxqX1FTgLmjIqJfzn
+lad1qv5UMgn7q6o+FIM3uiO/fEEu35xruuaq7PPmmq9t+fdHJ58vzL331perWjf8
+MC1rsP1vQ9bsH1NnCofXL7mr7+D9Bz68zdx5fOm+zp6vLpT6+t5+aPO6gS2bCzdd
+nOmcXNLau/2VZ9a/WP96y9Spy+iNNcmx6e8XvBud/vj1V9s+Wbe6u/vgqYmT365o
+Ob3n6aO9n93dniTt45f6xv2fjm789cdHNm34ZvfyqeLOP5t63l8m4/LCFfEDvH2g
+bfGRXfjCXrqzdqjzDvmYXXVk9mQx/Oh8ofHO0B+z5Rdmpiv3TFy397Xbj5GbR59/
+sue3tpET3x2+76/89bmXz9KXPl204+ffm28ZfPRZsrs89lTTpY17luKzg+Vl99LL
+0bnj51ufe3gyWf3gjScmDtRubRFfjA30/gM=
+=RBVl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/deviavir
+
+==================================================================

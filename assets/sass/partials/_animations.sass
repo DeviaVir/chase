@@ -1,7 +1,9 @@
 //Animate Mixin Plugin
-
-=animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
-  +experimental(animation, $name $duration $delay $function $mode)
+@mixin animation($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
+  -moz-animation: $name $duration $delay $function $mode
+  -webkit-animation: $name $duration $delay $function $mode
+  -ms-animation: $name $duration $delay $function $mode
+  animation: $name $duration $delay $function $mode
 
 
 @-moz-keyframes swing

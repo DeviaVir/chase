@@ -13,8 +13,8 @@
 	background-color: transparent
 	background-origin: padding-box
 	background-position: center center
-	+animate( fadeIn, 0.3s, 0.2s )
-	@include filter( blur(0.5px) )
+	@include animation( fadeIn, 0.3s, 0.2s )
+	z-index: -1
 	
 #contact-background
 	background: transparent url( '../img/contact-background.jpg' ) no-repeat 0 0
@@ -37,7 +37,7 @@
 	min-width: 0
 	max-width: 100%
 	margin: 0
-	+animate( fadeIn, 0.3s, 0.2s )
+	@include animation( fadeIn, 0.3s, 0.2s )
 	overflow: hidden
 	
 	> article
@@ -66,7 +66,7 @@
 		font:
 			size: 40px
 			weight: 300
-		max-width: 470px
+		max-width: 520px
 		margin-top: 20px
 		
 	.social
