@@ -1,8 +1,8 @@
-# Media API 1.0
+# adidas Energy Takeover API 1.0
 
-**Endpoint**: `/api/v1/media`
+**Endpoint**: `/api/v1/checkin`
 
-The "media" API endpoint allows you to submit photo's and/or videos to the Adidas Energy Takeover platform. The API expects an HTTP **POST** with media attached as raw multi-part data and a `urlencoded` (form posted) JSON that contains the details of your request. 
+The "checkin" API endpoint allows you to submit time checkin's for participants. The API expects an HTTP **POST** with a `urlencoded` (form posted) JSON that contains the details of your request. 
 
 More information about the arguments can be found below.
 
@@ -15,26 +15,10 @@ More information about the arguments can be found below.
   "rfid": "1234567890",
   "checkpoint": 1,
   "timestamp": 1423055651,
-  "type": "image",
   "apikey": "123456abcdef",
   "signature": "..."
 }
 ```
-Image data is expected to be the raw (multi-part) POST data.
-
-**Example video request**
-
-```json
-{
-  "rfid": "1234567890",
-  "checkpoint": 1,
-  "timestamp": 1423055651,
-  "type": "video",
-  "apikey": "123456abcdef",
-  "signature": "..."
-}
-```
-Video data is expected to be the raw (multi-part) POST data.
 
 ## Arguments
 
@@ -55,10 +39,6 @@ Example: **1423055651**: 02/04/2015 @ 1:14pm (UTC)
 
 Should be passed as `number`.
 
-### Type
-
-Type can be `video` or `image`, respectively. Should be passed as `string`.
-
 ### APIKey
 
 The API key will be given to you on registration and can be unique per run. Should be passed as `string`.
@@ -71,7 +51,6 @@ sha512(
   rfid + 
   timestamp + 
   apikey + 
-  sha1(value) + // sha1 of image/video data 
   sharedsecret
 )
 ```
