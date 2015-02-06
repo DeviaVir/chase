@@ -57,11 +57,11 @@ Should be passed as `number`.
 
 ### Type
 
-Type can be `video` or `image`, respectively.
+Type can be `video` or `image`, respectively. Should be passed as `string`.
 
 ### APIKey
 
-A `string`. The API key will be given to you on registration and can be unique per run.
+The API key will be given to you on registration and can be unique per run. Should be passed as `string`.
 
 ### Signature
 
@@ -75,4 +75,4 @@ sha512(
   sharedsecret
 )
 ```
-The shared secret will be given to you on registration and can be unique per run.
+The shared secret will be given to you on registration and can be unique per run. Should be passed as `string`.
