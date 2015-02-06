@@ -8,7 +8,7 @@ More information about the arguments can be found below.
 
 ## Examples
 
-**Example image request**
+**Example checkin request**
 
 ```json
 {
