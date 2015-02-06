@@ -2,9 +2,9 @@
 
 **Endpoint**: `/api/v1/media`
 
-The "media" API endpoint allows you to submit photo's and/or videos to the Adidas Energy Takeover platform. The API expects an HTTP **POST** with media attached as raw multi-part data and a `urlencoded` (form posted) JSON that contains the details of your request, examples of JSONs can be found below. 
+The "media" API endpoint allows you to submit photo's and/or videos to the Adidas Energy Takeover platform. The API expects an HTTP **POST** with media attached as raw multi-part data and a `urlencoded` (form posted) JSON that contains the details of your request. 
 
-More information about the timestamp, location checkpoints and signature can be found below.
+More information about the arguments can be found below.
 
 ## Examples
 
