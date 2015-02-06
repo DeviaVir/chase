@@ -71,7 +71,7 @@ sha512(
   rfid + 
   timestamp + 
   apikey + 
-  sha1(value) + // image/video sha1 
+  sha1(value) + // sha1 of image/video data 
   sharedsecret
 )
 ```
