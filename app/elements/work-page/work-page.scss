@@ -1,0 +1,18 @@
+@import '../styles/base';
+
+.content {
+  background-color: #FFFFFF;
+
+  img {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 640px) {
+  :host {
+    background-color: transparent;
+  }
+  .content {
+    margin: 0 auto;
+    width: 640px;
+  }
+}

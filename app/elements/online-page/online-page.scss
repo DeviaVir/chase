@@ -1,0 +1,28 @@
+@import '../styles/base';
+
+.content {
+  background-color: white;
+
+  a {
+    font-size: 50px;
+    color: #2E353C;
+    margin: 0 20px;
+
+    &.first {
+      margin-left: 40px;
+    }
+  }
+}
+github-card {
+  float: right;
+  margin: 20px 0;
+}
+@media screen and (min-width: 640px) {
+  :host {
+    background-color: transparent;
+  }
+  .content {
+    margin: 0 auto;
+    width: 640px;
+  }
+}

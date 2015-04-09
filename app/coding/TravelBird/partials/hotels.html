@@ -1,0 +1,31 @@
+<div id="container">
+  <header>
+    <span id="background"></span>
+    <div class="row search">
+      <div class="large-12 small-12 columns">
+        <a href="#" id="travelbird">TravelBird</a>
+        <div class="search-input">
+          <span class="icon-search"></span>
+          <input type="text" id="search" ng-model="searchQuery" placeholder="Zoek een vakantie" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hotels">
+    <div class="row">
+      <ul class="large-block-grid-2 small-block-grid-1">
+        <li ng-repeat="hotel in hotels | filter:searchQuery">
+            <div class="holder">
+              <img src="{{ hotel.image[0] }}" alt="">
+              <p class="price">&euro;{{hotel.offer.price}}</p>
+              <p class="city">{{hotel.city.name}}</p>
+              <p class="hotel">{{ hotel.hotel.name }}</p>
+              <p class="desc">{{ hotel.hotel.description[hotel.hotel.description.length - 1].content }}</p>
+              <a class="button orange" href="#/hotels/{{$index}}">learn more...</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Testcase - Animation with scrollbars</title>
+		
+		<link rel="stylesheet" href="style.css">
+		<script src="prefixfree.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="top"></div>
+			<section>
+				<article class="current">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu velit massa, id suscipit ante. In tincidunt nibh porta mi vulputate imperdiet. Morbi in urna at sapien adipiscing faucibus. Integer et elementum ipsum. Phasellus vitae mauris urna. Proin nisi lacus, vulputate in rhoncus nec, fermentum nec dolor. Ut est nibh, mollis id euismod nec, convallis quis lacus. Donec porttitor eros at lectus volutpat sit amet elementum magna rhoncus. Vestibulum bibendum, tortor sed egestas adipiscing, mauris mi vulputate augue, sed semper erat enim et turpis. Ut id arcu vitae tortor dapibus sodales. Nam id semper quam. Phasellus porttitor, lectus sit amet hendrerit imperdiet, mauris nisl dictum nibh, vel porttitor ipsum diam sit amet nisl.
+					</p>
+				</article>
+				<article style="display: none;">
+					<p>
+						Etiam a risus augue, non tempor felis. Fusce interdum est quis dolor tincidunt pulvinar. Morbi magna lacus, pellentesque et pharetra nec, interdum ac elit. Ut nec purus ac nunc viverra vehicula. Sed imperdiet egestas luctus. Etiam velit diam, laoreet facilisis lobortis bibendum, rhoncus et mauris. Fusce malesuada velit at dolor hendrerit dignissim. Aenean sit amet massa nunc. Ut nec ante mi. Integer vulputate nisi non ligula tempor convallis. Integer mi sapien, faucibus id aliquam sit amet, imperdiet eu magna. Nunc lacinia, felis ac interdum tempor, nisl justo pharetra lorem, ac luctus tellus sem in velit.
+					</p>
+				</article>
+				<article style="display: none;">
+					<p>
+						Curabitur rutrum eleifend sagittis. Donec mattis fringilla urna quis gravida. Duis pulvinar nibh nec lacus tincidunt bibendum. Aenean commodo tortor vitae magna suscipit eu iaculis diam tempor. Donec hendrerit dui id leo volutpat placerat. Phasellus eu orci augue, sit amet accumsan leo. Duis blandit magna sed diam egestas eu luctus massa egestas. Aliquam dignissim purus id dolor laoreet fringilla. Donec tincidunt laoreet nunc eu elementum. Vivamus suscipit congue dapibus. Vivamus dolor justo, facilisis vel laoreet sit amet, luctus id nisl. Praesent nunc tellus, rutrum id auctor sed, pharetra sed nisi. Cras quam dolor, posuere eu fringilla auctor, adipiscing a lectus. Fusce sed elit at orci dapibus pulvinar.
+					</p>
+				</article>
+				<article style="display: none;">
+					<p>
+						In purus massa, fermentum a vulputate ultricies, euismod pretium purus. Etiam rutrum lorem ac purus vulputate fermentum convallis nibh gravida. Cras ut nibh sapien, sit amet condimentum enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas odio eu nulla tristique molestie. Cras vel dictum leo. Nunc commodo, sapien non egestas semper, nisl sapien mattis ligula, vitae auctor arcu magna sit amet dolor. Duis semper sapien quis magna auctor at rhoncus tortor facilisis. Vestibulum ornare vehicula sem, eleifend iaculis eros venenatis nec. Duis sed diam non lacus tristique congue vitae sed magna. Etiam iaculis velit nunc, non consectetur diam. Vestibulum enim velit, vehicula vitae tristique vitae, mattis in orci. Nunc feugiat vestibulum erat vel convallis. Sed laoreet turpis sed turpis auctor et porta erat convallis. Morbi a dolor non mauris tempus mattis eget ut lectus. Nullam vehicula porta massa, quis egestas leo aliquam id.
+					</p>
+				</article>
+				<article style="display: none;">
+					<p>
+						Fusce a est quam. Fusce tempor, nisl quis venenatis dictum, lacus diam bibendum magna, eget mollis ligula ligula sed orci. Suspendisse potenti. Curabitur rutrum ultricies magna. Nam consequat urna eu nibh aliquam aliquet interdum purus tincidunt. Quisque non porttitor diam. Suspendisse id augue eget enim sollicitudin sagittis vel a nulla. Etiam viverra porttitor varius. 
+					</p>
+				</article>
+			</section>
+			<div class="bottom"></div>
+		</div>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			function recheck() {
+				if( !$( '.current' ).prev().length )
+					$( 'div.top' ).hide()
+				else
+					$( 'div.top' ).show()
+					
+				if( !$( '.current' ).next().length )
+					$( 'div.bottom' ).hide()
+				else
+					$( 'div.bottom' ).show()
+			}
+			
+			recheck()
+				
+			$( 'div.top' ).bind( 'click', function() {
+				$( '.current' ).removeClass( 'current top bottom' ).hide().prev().show().addClass( 'current top' )
+				recheck()
+			})
+			
+			$( 'div.bottom' ).bind( 'click', function() {
+				$( '.current' ).removeClass( 'current top bottom' ).hide().next().show().addClass( 'current bottom' )
+				recheck()
+			})
+		</script>
+	</body>
+</html>

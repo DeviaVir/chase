@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Chase</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+
+    <!-- Add to homescreen meta -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/favicon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+    <!-- Add to homescreen for Internet Explorer -->
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    <meta name="theme-color" content="#303F9F">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- Conditionally load WC polyfills -->
+    <!-- Thanks to https://github.com/geelen/x-gif for the snippet -->
+    <script>
+      if ('registerElement' in document &&
+        'createShadowRoot' in HTMLElement.prototype &&
+        'import' in document.createElement('link') &&
+        'content' in document.createElement('template')) {
+        // We're using a browser with native WC support!
+      } else {
+        document.write('<script src="/bower_components/webcomponentsjs/webcomponents.js"><\/script>');
+      }
+    </script>
+
+    <link rel="import" href="/elements/elements.critical.html">
+  </head>
+
+  <body unresolved>
+    <template id="app" is="auto-binding">
+
+      <core-media-query query="min-width: 640px" queryMatches="{{largeScreen}}">
+      </core-media-query>
+
+      <section layout horizontal>
+        <home-page class="page" id="home" flex>
+        </home-page>
+      </section>
+      <section layout horizontal>
+        <work-page class="page" id="work" flex>
+        </work-page>
+      </section>
+      <section layout horizontal>
+        <online-page class="page" id="online" flex>
+        </online-page>
+      </section>
+      <section layout horizontal>
+        <photo-page class="page" id="photo" flex>
+        </photo-page>
+      </section>
+
+    </template>
+
+    <!-- build:js /scripts/app.js -->
+    <script src="/scripts/app.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>

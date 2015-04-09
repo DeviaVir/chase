@@ -1,0 +1,26 @@
+<div id="container">
+	<header class="sub">
+    <span id="background"></span>
+    <a href="#" id="travelbird">TravelBird</a>
+  </header>
+	<div class="row view">
+		<div class="large-12 small-12">
+			<img ng-src="{{mainImageUrl}}" style="display:block;">
+			
+			<ul class="thumbs">
+				<div ng-repeat="img in hotel.image" style="width: 100px; display: inline-block;">
+				  <li><img ng-src="{{img}}" ng-click="setImage(img)"></li>
+				</div>
+		  </ul>
+
+			<h1>Hotel: {{hotel.hotel.name}}</h1>
+			<div ng-repeat="description in hotel.hotel.description">
+			  <h3>{{ description.type }}</h3>
+			  <p>{{ description.content }}</p>
+			</div>
+
+
+			<h3>City: {{hotel.city.name}}</h3>
+		</div>
+	</div>
+</div>

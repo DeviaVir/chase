@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Selfie to Elfie</title>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container"><div class="row"><br /></div></div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script>
+		var count = 0,
+		    max = 10,
+		    getImages = function(url) {
+			var url = url || 'https://api.instagram.com/v1/tags/selfie/media/recent?access_token=436081245.89ed0c0.820a078fe9cb49e597ffac0d430f88a8';
+			
+			$.ajax({
+				dataType: "jsonp",
+				url: url,
+				success: function(data) {
+					data.data.forEach( function( v, i ) {
+						$('.row').append(
+						  	$('<div />').addClass('col-xs-6 col-md-2').append(
+						  	  	$('<a />').attr({'href': '#', 'class': 'thumbnail'}).append(
+						  	  	  	$('<img />').attr('src', v.images.thumbnail.url)
+						  	  	)
+						  	)
+						);
+					});
+					count++;
+					
+					if(count < max) {
+					    getImages(data.pagination.next_url);
+					}
+				}
+			});
+		}
+		getImages();
+		
+		/* http://www.tumblr.com/docs/en/api/v2#posting */
+		/* http://www.tumblr.com/oauth/apps */
+		/* http://selfie2elfie.tumblr.com/ */
+		
+	</script>
+</body>
+</html>

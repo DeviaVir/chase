@@ -1,8 +1,9 @@
-*.scssc
-*.sassc
-coding/TravelBird/*
-coding/slim-betalen-poster/*
-coding/creative_old/*
-coding/etopia/*
-sftp-config.json
 node_modules
+dist
+test/temp
+.sass-cache
+app/bower_components
+.tmp
+test/bower_components/
+*.sublime-project
+*.sublime-workspace
