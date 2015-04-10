@@ -17,6 +17,23 @@ github-card {
   float: right;
   margin: 20px 0;
 }
+
+@media screen and (max-width: 640px) {
+  .content {
+    > div {
+      display: none !important;
+      &:first-child {
+        width: 100%;
+        display: flex !important;
+
+        > div {
+          margin: 50px auto;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 640px) {
   :host {
     background-color: transparent;

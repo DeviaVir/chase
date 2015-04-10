@@ -7,6 +7,15 @@
     width: 320px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .content {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (min-width: 640px) {
   :host {
     background-color: transparent;
