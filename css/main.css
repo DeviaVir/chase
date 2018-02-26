@@ -1,10 +1,42 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: Hack,Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 12px;
 }
+
+html, body {
+    height: 100%;
+    background: #000;
+    overflow-y: scroll!important;
+}
+
+body {
+    color: #f7f7f7;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -16,14 +48,11 @@ html {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
 
 audio,
 canvas,
@@ -34,15 +63,27 @@ video {
     vertical-align: middle;
 }
 
+/*
+ * Remove default fieldset styles.
+ */
+
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
 textarea {
     resize: vertical;
 }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -51,279 +92,350 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body{
-   background: #EEEEEE;
-   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   color: rgba(0,0,0,0.87);
-   -webkit-tap-highlight-color: rgba(255,255,255,0);
-   transition: opacity ease-in 0.2s;
-}
 
-.container {
-    max-width: 640px;
-    margin: 0 auto;
-    border-radius: 5px 5px 0 0;
-    width: 90%;
-}
-
-header {
-    background: none;
-    height: 300px;
+.tmux {
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
     position: relative;
-    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
 }
 
-header img {
-    filter: saturate(5);
+.window {
+    width: 100%;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.window-50 {
+    width: 50%;
+    float: left;
+}
+
+.window-25 {
+    width: 25%;
+    float: left;
+}
+
+.window-static-height {
+  height: 351px;
+}
+
+.window pre {
+  white-space: pre-wrap;
+}
+
+.window pre a {
+  color: #94f9fe;
+  text-decoration: none;
+}
+
+.border-bottom {
+    border-bottom: 5px solid #262626;
+}
+
+.border-left {
+    border-left: 5px solid #262626;
+}
+
+.border-right {
+    border-right: 5px solid #262626;
+}
+
+.border-top {
+    border-top: 5px solid #262626;
+}
+
+.rotator {
+    height: 130px;
+    width: 110px;
+    overflow: hidden;
+    position: relative;
+    color: #94f9fe;
+    animation: fadeIn 2s linear;
+
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
+    top: 15px;
+    right: 25px;
 }
 
-section {
-    margin: 20px 0 0;
+.rotator .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
-article, footer {
-    background: white;
-}
-
-section a {
+.rotator .item.active {
     display: block;
 }
 
-section img {
-    width: 100%;
-    height: 100%;
-}
-
-footer > section ul {
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #94f9fe;
+    margin: 0;
     padding: 0;
-    list-style: none;
-    margin: 20px 0 70px;
 }
 
-footer > section ul li {
-    float: left;
-    width: 33.33333%;
-}
-
-footer > section li a {
-    font-size: 50px;
-    color: #2E353C;
-    margin: 0 20px;
-    font-style: normal;
-    text-decoration: none;
-    text-align: center;
-}
-
-footer > section {
+.bar {
+    height: 15px;
+    width: 100%;
+    background-color: #262626;
+    position: relative;
     overflow: hidden;
 }
 
-footer > section iframe {
-    margin: 0 auto;
+.bar .title {
+    font-weight: 700;
+    color: #d7d7b0;
+    float: left;
 }
 
-i {
+.bar .tab {
+    float: left;
+    background-color: #0388af;
+    font-weight: 700;
+    height: 15px;
+    border-left: 10px solid #121212;
+    border-right: 5px solid #121212;
+}
+
+.bar .tab .arrow-in {
+    width: 0;
+    height: 0;
+    border-top: 7.5px solid #0388af;
+    border-bottom: 7.5px solid #0388af;
+
+    border-left: 7.5px solid #121212;
+    font-weight: 400;
+
+    display: block;
+    float: left;
+}
+
+.bar .tab i {
     font-style: normal;
+    font-weight: 400;
+    color: #7cccf6;
+    margin: 0 0 0 7.5px;
 }
 
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 768px) {
-    header {
-        background: url("../img/backscape.jpg") no-repeat 0 0;
-        background-size: 100%;
-        height: 400px;
-    }
-
-    section {
-        width: 50%;
-        float: left;
-    }
-
-    .container {
-        margin: 50px auto 0;
-    }
-
-    footer {
-        margin-bottom: 50px;
-        border-radius: 0 0 5px 5px;
-    }
-
-    footer > section {
-        height: 316px;
-    }
-
-    footer > section ul {
-        margin: 150px 0 0;
-        padding: 0;
-    }
-
-    section {
-        margin: 0;
-    }
+.bar .tab .arrow-context {
+    border-style: solid;
+    border-width: 0.05em 0.05em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.75em;
+    position: relative;
+    top: 2px;
+    vertical-align: top;
+    width: 0.75em;
+    left: -4px;
+    transform: rotate(45deg);
+    border-color: #7cccf6;
+    font-weight: 400;
 }
+
+.bar .tab .arrow-out {
+    width: 0;
+    height: 0;
+    padding-left: 5px;
+    border-top: 7.5px solid #121212;
+    border-bottom: 7.5px solid #121212;
+
+    border-left: 7.5px solid #0388af;
+    font-weight: 400;
+
+    display: block;
+    float: right;
+}
+
+.bar .date,
+.bar .time {
+    float: right;
+    position: relative;
+    font-size: 10px;
+    line-height: 15px;
+    color: black;
+    padding: 0 5px;
+    background-color: #626262;
+    font-weight: 700;
+}
+
+.bar .time {
+    background-color: #8a8a8a;
+}
+
+.mobile-only {
+    display: none;
+}
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Hide visually and from screen readers
+ */
+
 .hidden {
     display: none !important;
-    visibility: hidden;
 }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
 
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
     height: 1px;
     margin: -1px;
     overflow: hidden;
     padding: 0;
     position: absolute;
     width: 1px;
+    white-space: nowrap; /* 1 */
 }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
     height: auto;
     margin: 0;
     overflow: visible;
     position: static;
     width: auto;
+    white-space: inherit;
 }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
 
 .invisible {
     visibility: hidden;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
-.clearfix {
-    *zoom: 1;
+/* ==========================================================================
+   Animation Keyframes
+   ========================================================================== */
+
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
 }
 
 /* ==========================================================================
-   Print styles
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 1023px) {
+    /* Style adjustments for viewports that meet the condition */
+    .window-50 {
+        width: 100%;
+        float: none;
+    }
+
+    .window-25 {
+        width: 100%;
+        float: none;
+    }
+
+    .window-static-height {
+        height: auto;
+    }
+
+    .border-left {
+        border-left: 0;
+    }
+
+    .border-right {
+        border-right: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .rotator {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .banner {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -331,7 +443,8 @@ i {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -349,16 +462,29 @@ i {
         content: " (" attr(title) ")";
     }
 
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
 
+    pre {
+        white-space: pre-wrap !important;
+    }
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
 
     thead {
         display: table-header-group;
@@ -367,10 +493,6 @@ i {
     tr,
     img {
         page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
     }
 
     p,
