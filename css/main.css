@@ -21,7 +21,6 @@ html {
 html, body {
     height: 100%;
     background: #000;
-    overflow-y: scroll!important;
 }
 
 body {
