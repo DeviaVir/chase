@@ -4,68 +4,78 @@ https://keybase.io/deviavir
 
 I hereby claim:
 
-  * I am an admin of http://chase.sillevis.net
+  * I am an admin of https://chase.sillevis.net
   * I am deviavir (https://keybase.io/deviavir) on keybase.
-  * I have a public key with fingerprint 0D7E AFC2 CAE8 F463 B3D0  1FB2 38F3 B216 F4A7 B8F9
+  * I have a public key with fingerprint 0A1F 87C7 936E B246 1C6A  9D9B AD99 70F9 8EB8 84FD
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
-    "body": {
-        "client": {
-            "name": "keybase.io node.js client",
-            "version": "0.4.15"
-        },
-        "key": {
-            "fingerprint": "0d7eafc2cae8f463b3d01fb238f3b216f4a7b8f9",
-            "host": "keybase.io",
-            "key_id": "38F3B216F4A7B8F9",
-            "uid": "e265a93e80df2496bdd6773c8212a700",
-            "username": "deviavir"
-        },
-        "merkle_root": {
-            "ctime": 1408019878,
-            "hash": "a4ac366c110bdd8647c6f1264abe1fda6e40f90e761777b43fbf8f0c0bdcf1f2d6d9ff25df52c266d60e7b55663fff3a82fc71951e5c1badfe9ee4e8ec3254ff",
-            "seqno": 37222
-        },
-        "service": {
-            "hostname": "chase.sillevis.net",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0120ef940329765cb3e6bc9dd49745fcf125bb46e8cb1c05b1eb1f74e4e6c44723c50a",
+      "fingerprint": "0a1f87c7936eb2461c6a9d9bad9970f98eb884fd",
+      "host": "keybase.io",
+      "key_id": "ad9970f98eb884fd",
+      "kid": "0101e6cbde22b174b2cd9099f240b5314c525009fbb3df53b20d5941a92ce7952d1b0a",
+      "uid": "e265a93e80df2496bdd6773c8212a700",
+      "username": "deviavir"
     },
-    "ctime": 1408019949,
-    "expire_in": 157680000,
-    "prev": "8b004193d4a34173248d9d593713bb4a2dc858aae1d1a63679d0aefdeb46499e",
-    "seqno": 7,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1546248036,
+      "hash_meta": "3d57ada22bbe932d2ee1f156cd924c43b4d20d89f97ce3a250b659e13da81542",
+      "seqno": 4212560
+    },
+    "revoke": {
+      "sig_ids": [
+        "8cf1fb7ecf72e1e8e5d97a6630b281a474e7488d2c99d2db0e82eaf847128cfd0f"
+      ]
+    },
+    "service": {
+      "hostname": "chase.sillevis.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1546248040,
+  "expire_in": 157680000,
+  "prev": "6eb9c537f99a9c339e0dda34b49ae62202fe6f19b7c3573efa5415b859c7fed2",
+  "seqno": 66,
+  "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Comment: GPGTools - https://gpgtools.org
 
-owFVkn9olVUYx+8tG7aKZj8UU5y8ORK2Xd7z4z0/FiFTuiPSAl1ZVtydH8/Zfef1
-vnfve3drjUWjQIyQ/VNUsKDUImNCc/2C+sOCyoRUkjAzCRJqkGW5FBOj9x2L8vx1
-znk+5/s83+c54zdcnWvOi3NTi2ff/OBi/tCMzm36ZfLMiKcjO+x1jXimEkK1nu2q
-aht4Xd5WGNYqgUIYraxGFgoDycp5psNrQJyEUTWl/AItoMAb7cj47LULq/0Q1+Iw
-E/N8y0E5g40C4SgjmlgfOY2JcERjxBxVXAsnU81ylNSvSOvNaZZCm94SUSRrU75I
-u/laUcz4obkAYBYoSUD41mEqmbaWcU6MwAgr7vsZmEA878lCI1SNMM7q3Qbx1gqU
-4iiac23qYYYg6gsfScFFWpFKyukjRZUhjBmE/FRdMMoNcwgzqjQgZxUD6jvpA2eI
-c64pcdoJ55uUNg45bJmVzuHAugAbzJhlKauDgDHinCNKYGc4kgGCwCCtrAMJQEGA
-ITigzqUWEhisRl4X4Rjj0ewYN0IDWdlZ1+bNmXLWtySsVFKXSaEK2aRqcVSPTFRJ
-4+V6vdaVOa8P18Db3+U9Dro0L1XSYdWmk/v/bFGKXtkVSWWHB0/UwhhKYUYEnAk/
-XVkeaKQ5hPZ9iiSxVBGKOMFUWGkDSTgiWlOFrRGBUAqQRYoRxqX1FTgLmjIqJfzn
-lad1qv5UMgn7q6o+FIM3uiO/fEEu35xruuaq7PPmmq9t+fdHJ58vzL331perWjf8
-MC1rsP1vQ9bsH1NnCofXL7mr7+D9Bz68zdx5fOm+zp6vLpT6+t5+aPO6gS2bCzdd
-nOmcXNLau/2VZ9a/WP96y9Spy+iNNcmx6e8XvBud/vj1V9s+Wbe6u/vgqYmT365o
-Ob3n6aO9n93dniTt45f6xv2fjm789cdHNm34ZvfyqeLOP5t63l8m4/LCFfEDvH2g
-bfGRXfjCXrqzdqjzDvmYXXVk9mQx/Oh8ofHO0B+z5Rdmpiv3TFy397Xbj5GbR59/
-sue3tpET3x2+76/89bmXz9KXPl204+ffm28ZfPRZsrs89lTTpY17luKzg+Vl99LL
-0bnj51ufe3gyWf3gjScmDtRubRFfjA30/gM=
-=RBVl
+owFtk3tQFVUcxy8KpphS5mA+MNiBfDFy9uw5u3twxFK6UITB9ZETMtc9e87Kyn1x
+7/WKApk6U4OmMSWajzI1RyWCSEGbJJFKm2ySRpPx0cNKS4dEGR9ROXYuozNN0/6z
+s2d/3+/vc76/c2qG9HcMjNk3tjOx0NkZE3P8MnXMn/CDp0KifrZUyqyQSnnfi3sY
+D4XdpTaTMiUgQ8AtgoACiaZikypcpSZhDBENYcu0ZIgpRSrXTSqbAFOZU9nSEEdc
+NRHSoGJiYEjpkmX7FvJgIGj7wlFbQ7Z0zdSIonIKkSqbqkEYoQYjRAMW0TnVdWQx
+ISzxh6IKAUeNEJ9s+8Wa+HD34f1P/X1uIAsCyjiEVNYQhSYjgBALIkCxIiMTQwwA
+sShVmIUVCgHDBMkGgSbXCIZMpn3ci/vsOFSxQRSuAyYciEoZUzVNMXUoQ0MDIFoY
+4kGf4eWimvGIbUTsoFSVLnl5sNTD3UG/PxwN1wzb0RIZIxUiHSiq2KARKnF7edgQ
+SoVhzWCGYKacKJBBzmVLxqqAh8hECkVMgOrEIprJFUNsgaqYcFlhhi48oeAI8TKf
+X8pEggyrQBAEecRfyqPNQ/ZCEVtIyiySdDG5tiqLaty0NMhlrnPMiGaoqgIo1GUD
+iRlqSNcZNAlhkFHAdcgNS0eaDIWaAUsqroq2C0Zss88+Oql7CZgl0VmFbI9HRBGa
+7ONhQRYI+sN+0+8R/0vC4UAoM5pPeGkgKljCqfuelZvaPiZOi1BEeDBk+30iL1H5
+n+gQSJd4ecAOcrcdrcCaqgPxRPvwiLAUJ4uYWNEsQgxiKgrhgDFDQRQRg6sQAmhx
+1ZIJ1UwFawq3DIxkTHVMTM3i7F9ZqmJKYWOh8BQJ+ozw4iCXquKr+ymxjpiBjqTE
+lNjrjXcOba/PnrZ5sDrm/g2L6xe9Xo74QQ/dXxmZmHDX9/BfU9Bp7/4zXa7WmfHT
+q5tj3FUVQ1cfTnjy1pkVo989vGW28+Vl+8vhqZYfVzTfXr9kYuuOTe+F1GHbyqZ1
+dD9/paan8sDt5vNF436pHTts/+dfjx91M2Nl8ZL6hIaz60609DpO1qzNhua2mqLC
+1M13hngHwpTGtKxdx3Z277lYcyyF+lPqjndfbTnZNbW71ztrgvx9BHzUuBvmxJ86
+/0nhzIbcMntSak/dqC8nTY//+Y8LWZfiys4ku96c2p4zp7c9ufa7/Fpn6oavnBeW
+zvHOemzwtV1DB90NFH+ztalz8tG0gty/MzrPfTGgc1Fu+bIbenzzyY/nXt4Y6cqX
+X30p19XRkrToiQs/OfaszO9efmTL2eRrq32P59ZKDaNx0ghQda6yTm6f7bpl4l9b
+eUHGvNU7Lh0YWfdpUs+CuLarGfM3zM05H5svP3Os45XkMXnfrh/8wrOu7ufaHpHW
+zGjcEbu9J7ts+Omdjx6uLMj7LZF0XizYmj5xEh+678OmNa9lZ+FVFQlbXK9f2Vh+
+86mpv9evvT73auXR0tk1Cz7wLJoH9g4Y1+hdc3td/3ceOORwptiJT6uu086u+QlT
+inJaj5+6Ubw7zTemqXd4G8h6MKAtrx6Q1LDu7fw49lnjgsSN7U0HwYs3Ot7ogQff
+f4veXFWr56Wn780r+tOZeaV6V2HaDP16+4jxWKmPO5IwJ/WEfWnvpn8A
+=j8BW
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
